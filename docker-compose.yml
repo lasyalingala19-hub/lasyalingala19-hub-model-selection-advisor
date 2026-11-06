@@ -1,0 +1,8 @@
+services:
+  advisor:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./artifacts:/app/artifacts
+      - ./mlruns:/app/mlruns
